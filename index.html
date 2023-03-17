@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Dictionary Web App</title>
 </head>
-<body>
 
+<body>
+  <div class="dictionary-web-app">
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="theme">
+          <div class="theme-selector">
+            <input type="checkbox" id="switch" /><label for="switch"></label>
+          </div>
+          <div class="theme-icon">
+            <img src="assets/images/icon-moon.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text">
+        <div class="search-icon">
+          <img src="assets/images/icon-search.svg" alt="">
+        </div>
+      </div>
+      <div class="main">
+        <div class="first-row">
+          <div class="word">
+            <h2>keyboard</h2>
+            <span>/ˈkiːbɔːd/</span>
+          </div>
+          <div class="play">
+            <img src="assets/images/icon-play.svg" alt="">
+          </div>
+        </div>
+        <div class="section noun">
+          <div class="seperator">
+            <div class="section-name">
+              <span>noun</span>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="section-heading">
+            <h4>Meaning</h4>
+          </div>
+          <div class="section-content">
+            <ul>
+              <li><span>(etc.) A set of keys used to operate a typewriter, computer etc.</span></li>
+              <li><span>A component of many instruments including the piano, organ, and harpsichord consisting of
+                  usually
+                  black and white keys that cause different tones to be produced when struck.</span></li>
+              <li><span>A device with keys of a musical keyboard, used to control electronic sound-producing devices
+                  which may
+                  be built into or separate from the keyboard device.</span></li>
+            </ul>
+          </div>
+          <div class="section-heading">
+            <h4>Synonyms</h4>
+            <span>electronic keyboard</span>
+          </div>
+        </div>
+        <div class="section verb">
+          <div class="seperator">
+            <div class="section-name">
+              <span>verb</span>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="section-heading">
+            <h4>Meaning</h4>
+          </div>
+          <div class="section-content">
+            <ul>
+              <li><span class="meaning">(etc.) A set of keys used to operate a typewriter, computer etc.</span>
+                <p>“Keyboarding is the part of this job I hate the most.”</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="source">
+          <div class="heading">
+            <span>Source</span>
+          </div>
+          <div class="link">
+            <a href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
+            <div class="link-icon">
+              <img src="assets/images/icon-new-window.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
