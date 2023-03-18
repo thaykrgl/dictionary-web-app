@@ -1,0 +1,19 @@
+.dark-mode-bg .dictionary-web-app .container .header .theme .theme-icon svg path {
+  stroke: #A445ED;
+}
+.dark-mode-bg .dictionary-web-app .container .search-bar input {
+  background: #1F1F1F;
+  color: #fff;
+}
+.dark-mode-bg .dictionary-web-app .container .main .first-row .word h2 {
+  color: #fff;
+}
+.dark-mode-bg .dictionary-web-app .container .main .section .seperator .section-name span {
+  color: #fff;
+}
+.dark-mode-bg .dictionary-web-app .container .main .section .section-content ul li span {
+  color: #fff;
+}
+.dark-mode-bg .dictionary-web-app .container .main .source .link a {
+  color: #fff;
+}/*# sourceMappingURL=dark-mode.css.map */

@@ -1,0 +1,63 @@
+.dark-mode-bg {
+    .dictionary-web-app {
+        .container {
+
+            .header {
+                .theme {
+                    .theme-icon {
+                        svg {
+                            path {
+                                stroke: #A445ED;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .search-bar {
+                input {
+                    background: #1F1F1F;
+                    color: #fff;
+                }
+            }
+
+            .main {
+                .first-row {
+                    .word {
+                        h2 {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .section {
+                    .seperator {
+                        .section-name {
+                            span {
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .section-content {
+                        ul {
+                            li {
+                                span {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .source {
+                    .link {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
