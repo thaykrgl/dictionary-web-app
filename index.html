@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <audio id="sound"></audio>
   <div class="dictionary-web-app">
     <div class="container">
       <div class="header">
@@ -39,20 +40,20 @@
         </div>
       </div>
       <div class="search-bar">
-        <input type="text" id="search-input">
+        <input type="text" id="search-input" value="hello">
         <div class="search-icon">
-          <img src="assets/images/icon-search.svg" alt="">
+          <img id="search-icon" src="assets/images/icon-search.svg" alt="">
         </div>
       </div>
       <div class="main">
         <div class="first-row">
           <div class="word">
-            <h2>keyboard</h2>
-            <span>/ˈkiːbɔːd/</span>
+            <h2 id="word">keyboard</h2>
+            <span id="phonetic">/ˈkiːbɔːd/</span>
           </div>
           <div class="play">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+            <svg onclick="playSound()" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
               <g fill="#A445ED" fill-rule="evenodd">
                 <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
                 <path d="M29 27v21l21-10.5z" />
@@ -60,7 +61,7 @@
             </svg>
           </div>
         </div>
-        <div class="section noun">
+        <div id="noun-section" class="section noun">
           <div class="seperator">
             <div class="section-name">
               <span>noun</span>
@@ -86,7 +87,7 @@
             <span>electronic keyboard</span>
           </div>
         </div>
-        <div class="section verb">
+        <div id="verb-section" class="section verb">
           <div class="seperator">
             <div class="section-name">
               <span>verb</span>
@@ -109,9 +110,11 @@
             <span>Source</span>
           </div>
           <div class="link">
-            <a href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
+            <a id="source" href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
             <div class="link-icon">
-              <img src="assets/images/icon-new-window.svg" alt="">
+              <a id="source-link" href="https://en.wiktionary.org/wiki/keyboard">
+                <img src="assets/images/icon-new-window.svg" alt="">
+              </a>
             </div>
           </div>
         </div>
