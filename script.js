@@ -24,16 +24,27 @@ searchIcon.addEventListener("click", () => {
     let audioUrl;
     nounSection.remove();
     verbSection.remove();
-    let section = document.getElementsByClassName("section");
-    for (let i = 0; i < section.length; i++) {
-        section[i].remove();
-    }
-    console.log(section);
+    // let sectionCont = document.getElementsByClassName("section-container");
+    // console.log(sectionCont);
+    // for (let i = 0; i < sectionCont.length; i++) {
+    //     console.log(sectionCont.length);
+    //     sectionCont[i].remove();
+    //     console.log(sectionCont[i]);
+    // }
+    // console.log(sectionCont);
+
     fetch(URL)
         .then(data => data.json())
         .then(data => {
-            console.log(data);
-            //section.remove();
+            // console.log(data);
+            // let sectionCont = document.getElementsByClassName("section-container");
+            // console.log(sectionCont);
+            // for (let i = 0; i < sectionCont.length; i++) {
+            //     console.log(sectionCont.length);
+            //     console.log(sectionCont[i]);
+            //     sectionCont[i].remove();
+            // }
+            // console.log(sectionCont);
 
             // Word
             word.innerHTML = data[0].word;
@@ -59,8 +70,9 @@ searchIcon.addEventListener("click", () => {
 
                     var node = document.querySelector(".first-row"),
                         ele = document.createElement("div");
+                    ele.setAttribute("class", "section-container");
 
-                    ele.innerHTML = `<div class="section noun">
+                    ele.innerHTML = `<div class="section">
                     <div class="seperator">
                       <div class="section-name">
                         <span>${element.partOfSpeech}</span>
@@ -88,21 +100,49 @@ searchIcon.addEventListener("click", () => {
                         let meaningSpan = document.createElement("span");
                         meaningLi.appendChild(meaningSpan);
                         meaningSpan.innerHTML = item.definition;
-                    })
+                    });
 
                 } else {
 
+                    var node = document.querySelector(".first-row"),
+                        ele = document.createElement("div");
+                    ele.setAttribute("class", "section-container");
+
+                    ele.innerHTML = `<div class="section">
+                        <div class="seperator">
+                          <div class="section-name">
+                            <span>${element.partOfSpeech}</span>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                        <div class="section-heading">
+                          <h4>Meaning</h4>
+                        </div>
+                        <div class="section-content">
+                          <ul id="meaning-list">
+                            
+                          </ul>
+                        </div>
+                      </div>`
+
+                    node.parentNode.insertBefore(ele, node.nextSibling);
+
+                    element.definitions.forEach(item => {
+                        let meaningLi = document.createElement("li");
+                        document.getElementById("meaning-list").appendChild(meaningLi);
+                        let meaningSpan = document.createElement("span");
+                        meaningLi.appendChild(meaningSpan);
+                        meaningSpan.innerHTML = item.definition;
+                        let meaningExample = document.createElement("p");
+                        meaningLi.appendChild(meaningExample);
+                        meaningExample.innerHTML = `"${item.example}"`;
+                    })
                 }
             })
 
             // Source
             source.innerHTML = data[0].sourceUrls[0];
             sourceLink.setAttribute("href", data[0].sourceUrls[0])
-
-
-
-
-
         })
 });
 
