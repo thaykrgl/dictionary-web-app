@@ -198,6 +198,9 @@ img {
 .dictionary-web-app .container .main .section .section-content ul li {
   padding-bottom: 15px;
 }
+.dictionary-web-app .container .main .section .section-content ul li:last-child {
+  padding-bottom: 0px;
+}
 .dictionary-web-app .container .main .section .section-content ul li::before {
   content: "•";
   color: #8F19E8;
@@ -225,7 +228,8 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-block: 20px;
+  padding-block: 20px;
+  border-top: 1px solid #e9e9e9;
 }
 .dictionary-web-app .container .main .source .heading span {
   font-weight: 400;
