@@ -40,9 +40,9 @@
         </div>
       </div>
       <div class="search-bar">
-        <input type="text" id="search-input" value="keyboard">
+        <input type="text" id="search-input" value="back">
         <div class="search-icon">
-          <img id="search-icon" src="assets/images/icon-search.svg" alt="">
+          <img id="search-icon" class="word-search" src="assets/images/icon-search.svg" alt="">
         </div>
       </div>
       <div class="main">
@@ -51,7 +51,7 @@
             <h2 id="word">keyboard</h2>
             <span id="phonetic">/ˈkiːbɔːd/</span>
           </div>
-          <div class="play">
+          <div class="play" id="audio-play">
 
             <svg onclick="playSound()" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
               <g fill="#A445ED" fill-rule="evenodd">
@@ -84,7 +84,7 @@
           </div>
           <div class="section-heading">
             <h4>Synonyms</h4>
-            <span>electronic keyboard</span>
+            <span onclick="getData(`back`)" class="word-search">electronic keyboard</span>
           </div>
         </div>
         <div id="verb-section" class="section verb">
@@ -110,9 +110,10 @@
             <span>Source</span>
           </div>
           <div class="link">
-            <a id="source" href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
+            <a id="source" href="https://en.wiktionary.org/wiki/keyboard"
+              target="_blank">https://en.wiktionary.org/wiki/keyboard</a>
             <div class="link-icon">
-              <a id="source-link" href="https://en.wiktionary.org/wiki/keyboard">
+              <a id="source-link" href="https://en.wiktionary.org/wiki/keyboard" target="_blank">
                 <img src="assets/images/icon-new-window.svg" alt="">
               </a>
             </div>
