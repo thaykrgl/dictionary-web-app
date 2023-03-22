@@ -171,6 +171,7 @@ img {
   display: flex;
   align-items: center;
   gap: 22px;
+  flex-wrap: wrap;
 }
 .dictionary-web-app .container .main .section .section-heading h4 {
   font-weight: 400;
