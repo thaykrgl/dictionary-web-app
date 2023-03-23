@@ -1,0 +1,34 @@
+.not-found {
+  margin-top: 132px;
+}
+.not-found .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+.not-found .image img {
+  width: 64px;
+}
+.not-found h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2D2D2D;
+  margin-bottom: 24px;
+}
+.not-found p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #757575;
+  margin-bottom: 0px;
+}
+
+.empty-div p {
+  margin-top: 8px;
+  color: #FF5252;
+}/*# sourceMappingURL=validation.css.map */
