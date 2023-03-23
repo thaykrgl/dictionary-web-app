@@ -15,6 +15,10 @@ let mainContent = document.getElementById("main");
 let container = document.getElementById("container");
 let searchBar = document.getElementById("search-bar");
 const sound = document.getElementById("sound");
+const themeSound = document.getElementById("themeSound");
+
+// THEME AUDIO
+
 
 
 // INPUT VALIDATION
@@ -33,9 +37,15 @@ function removeElementsByClass(className) {
 }
 
 
-// DARK MODE
+// DARK MODE / THEME SELECTOR AUDIO
 themeSelector.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode-bg");
+  if (document.body.classList.contains("dark-mode-bg")) {
+    themeSound.setAttribute("src", "https://cdn.freesound.org/previews/237/237944_3877322-lq.mp3");
+  } else {
+    themeSound.setAttribute("src", "https://cdn.freesound.org/previews/440/440499_4629347-lq.mp3");
+  }
+  themeSound.play();
 })
 
 
