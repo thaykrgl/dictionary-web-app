@@ -46,7 +46,6 @@ function getData(searchWord) {
 
   if (searchWord === "") {
     removeElementsByClass("empty-div");
-    console.log("boş");
     searchInput.classList.add("input-error-border");
     mainContent.style.display = "none";
     let emptyDiv = document.createElement("div");
@@ -64,15 +63,12 @@ function getData(searchWord) {
     searchInput.classList.remove("input-error-border");
     document.querySelector(".dictionary-web-app .container .search-bar .search-icon").style.top = "55%";
     removeElementsByClass("empty-div");
-    console.log(searchWord);
     let URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
     let audioUrl;
 
     fetch(URL)
       .then(data => data.json())
       .then(data => {
-
-        console.log(data);
 
         if (data.title == "No Definitions Found") {
           removeElementsByClass("not-found");
