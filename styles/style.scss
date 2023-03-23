@@ -9,6 +9,11 @@ body {
     transition: all 0.3s ease;
 }
 
+.input-error-border {
+    border: 1px solid #FF5252 !important;
+}
+
+
 img {
     max-width: 100%;
 }
@@ -120,6 +125,10 @@ img {
 
                 &:hover {
                     cursor: pointer;
+                }
+
+                &::placeholder{
+                    opacity: 0.25;
                 }
             }
 
@@ -314,5 +323,3 @@ img {
         }
     }
 }
-
-// DARK MODE
