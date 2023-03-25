@@ -36,7 +36,7 @@ Users should be able to:
 
 #### Mobile View
 
-  <img src="./images/mobile.png" alt="" style = "width: 48%; object-fit: cover; padding-right: 3%;"> <img src="./images/mobile-dark.png" alt="" style = "width: 48%; object-fit: cover">
+  <img src="./images/mobile.png" alt="" style = "width: 48%; object-fit: cover; padding-right: 4%;"> <img src="./images/mobile-dark.png" alt="" style = "width: 48%; object-fit: cover">
 
 
 ### Links
